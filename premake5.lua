@@ -4,7 +4,7 @@ project "msdf-atlas-gen"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
-    staticruntime "off"
+	staticruntime "off"
 
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/Thirdparty/%{prj.name}")
 	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/Thirdparty/%{prj.name}")
@@ -12,8 +12,8 @@ project "msdf-atlas-gen"
 	files
 	{
 		"msdf-atlas-gen/**.h",
-    	"msdf-atlas-gen/**.hpp",
-    	"msdf-atlas-gen/**.cpp"
+		"msdf-atlas-gen/**.hpp",
+		"msdf-atlas-gen/**.cpp"
 	}
 
 	includedirs
