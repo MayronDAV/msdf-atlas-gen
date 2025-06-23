@@ -29,10 +29,7 @@ project "msdf-atlas-gen"
 		"MSDFGEN_PUBLIC="
 	}
 
-	links
-	{
-		"msdfgen"
-	}
+	links { "msdfgen" }
 
 	filter "system:windows"
 		systemversion "latest"
@@ -40,6 +37,7 @@ project "msdf-atlas-gen"
 	filter "system:linux"
 		pic "on"
 		systemversion "latest"
+		links { "freetype" }
 
 	filter "configurations:Debug"
 		runtime "Debug"
